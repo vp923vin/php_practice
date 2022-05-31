@@ -13,9 +13,9 @@ class Employee{
     // }
 
     // contructor with arguments
-    function __construct($name1, $salary1){
-        $this->name = $name1;
-        $this->salary = $salary1;
+    function __construct($name, $salary){
+        $this->name = $name;
+        $this->salary = $salary;
     }
 
 }
