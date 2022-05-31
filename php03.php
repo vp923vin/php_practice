@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php
-       //properties
+
+       //properties 
        class student{
            public $name;
            public $stands;
