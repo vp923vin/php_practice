@@ -9,7 +9,7 @@
 <body>
     <?php
 
-       //properties 
+       //properties for objects
        class student{
            public $name;
            public $stands;
@@ -17,7 +17,7 @@
            public $marks;
            public $grade;
            
-           // methods
+           // methods for objects
            function __construct($name, $stands, $DOB, $marks, $grade){
                $this->name = $name;
                $this->stands = $stands;
