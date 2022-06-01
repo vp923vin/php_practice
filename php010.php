@@ -8,17 +8,29 @@
 </head>
 <body>
    <?php
+   // abstract class and Methods 
+
+   // abstract class declaration or parent class 
        abstract class car{
+
+         //properties
            public $name;
            public $color;
+
+           //methods
            public function __construct($name, $color){
                $this->name = $name;
                $this->color = $color;
            }
+
+           // abstract methods of abstract car class which is compulsory to write 1 abstract method atleast
            abstract function Message() ;
-       } 
+       }
+       
+       // inherited class or child class
 
        class Tata extends car{
+         //methods here we have to write the same name abstract method we write in car class
            function Message(){
              echo "$this->name car is amazing  $this->color looks great in this car <br>"; 
            }
@@ -41,7 +53,8 @@
           echo "$this->name car is fabulous  $this->color looks great in this car. <br>"; 
         }
     }
-
+    
+       // here objects are created and classes and methods are being called
        $Tata = new Tata("Tata","black");
        $Tata->Message();
 
